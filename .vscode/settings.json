@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "src",
+        "Operators.java",
+        "NewAge2.java",
+        "NewAge.java",
+        "Awesome.java/src",
+        "Awesome.java",
+        "Temperature.java"
+    ]
+}
