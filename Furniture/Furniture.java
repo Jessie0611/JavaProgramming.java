@@ -8,7 +8,7 @@ public class Furniture{
 		double saleProfit;
         
         profit = retailPrice - wholesalePrice;
-        salePrice = retailPrice * 0.75;
+        salePrice = retailPrice * (1 - 0.25);
         saleProfit = salePrice - wholesalePrice;
 
 		System.out.println("Item Name: " + itemName);
