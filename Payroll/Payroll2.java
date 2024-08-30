@@ -26,8 +26,8 @@ public class Payroll2{
 		dependentDeduction = salary * 0.025 * numDependents;
         System.out.println("Dependents Deduction: $" + dependentDeduction);
 
-        totalWithholding = stateTax + federalTax + dependentDeduction;
-        takeHomePay = salary - totalWithholding;
+        totalWithholding = stateTax + federalTax;
+        takeHomePay = salary - totalWithholding + dependentDeduction;
         System.out.println("Salary: $" + salary);
         System.out.println("Take Home Pay: $" + takeHomePay);
         System.exit(0);
