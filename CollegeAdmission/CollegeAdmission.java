@@ -1,9 +1,19 @@
 import javax.swing.JOptionPane; 
 public class CollegeAdmission{
    public static void main(String args[]){ 
-     // Declare variables   
-     // Get input and convert to correct data type
-     // Test using admission requirements and print Accept or Reject 
+        int testScore;
+        int classRank;
+        String testScoreString;
+        String classRankString;
+
+
+        testScoreString = JOptionPane.showInputDialog("Enter Student Test Score: ");
+        testScore = Integer.parseInt(testScoreString);
+        classRankString = JOptionPane.showInputDialog("Enter Class Rank: ");
+        classRank = Integer.parseInt(classRankString);
+System.out.println("Test Score:" + testScore);
+System.out.println("Class Rank:" + classRank);
+
      if( testScore >= 90 )
      {
 	if( classRank >= 25)
