@@ -13,13 +13,12 @@ while(numStars >= 0)
 {
     totalStars += numStars;
     numPatrons++;
-    averageStars = totalStars / numPatrons;
     
     numStarsString = JOptionPane.showInputDialog("Enter star rating: ");
     numStars = Double.parseDouble(numStarsString);
-
-    System.out.println("Average Star Value: " + averageStars);
 }
+    averageStars = totalStars / numPatrons;
+    System.out.println("Average Star Value: " + averageStars);
 System.exit(0);
 }
 }
