@@ -17,7 +17,7 @@ do{
     System.out.println(head2 + byTwo);
     System.out.println(head3 + byTen);
 
-    numberCounter++;
+    numberCounter++;// Increment after printing or the results are incorrect
 } while(numberCounter <= NUM_LOOPS);
 
 
