@@ -12,12 +12,14 @@ numberCounter = 0;
 do{ 
     byTwo = numberCounter * 2;
     byTen = numberCounter * 10;
-    numberCounter++;
 
     System.out.println(head1 + numberCounter);
     System.out.println(head2 + byTwo);
     System.out.println(head3 + byTen);
+
+    numberCounter++;
 } while(numberCounter <= NUM_LOOPS);
+
 
 System.exit(0);
 }
