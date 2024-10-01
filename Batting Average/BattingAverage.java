@@ -14,13 +14,23 @@ public static void main(String args[]){
         // Assign the first element in the array to be the minimum and the maximum.
     min = averages[0];
     max = averages[0];
-// Start out your total with the value of the first element in the array.
+    // Start out your total with the value of the first element in the array.
     total = averages[0];
-// Write a loop here to access array values starting with averages[1]
-// Within the loop test for minimum and maximum batting averages.
-// Also accumulate a total of all batting averages.
+    for(loopIndex = 1; loopIndex < ARRAY_SIZE; loopIndex++)
+    {
+        if (averages[loopIndex] < min)
+        {
+            min = averages[loopIndex];
+        }
+        if (averages[loopIndex] > max)
+        {
+            max = averages[loopIndex];
+        }
+        //accumlate total of all batting averages
+    }
 // Calculate the average of the 8 averages.
-// Print the averages stored in the averages array.
+
+// Print the averages stored in the averages array. --need a loop to do this
 // Print the maximum batting average, minimum batting average, and average batting average.
     System.exit(0);
     }
