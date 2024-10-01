@@ -12,7 +12,7 @@ public static void main(String args[]) throws Exception{
 // Write your loop here.
 // Write your test statement here to see if there is
 // a match. Set the flag to true if city is found.
-    }
+    
 // Test to see if city was not found to determine if
 // "Not a city in Michigan" message should be printed.
     System.exit(0);
