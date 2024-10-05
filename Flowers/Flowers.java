@@ -1,29 +1,20 @@
-// Flowers.java - This program reads names of flowers and whether they are grown in shade or sun from an input 
-// file and prints the information to the user's screen. 
-// Input:  flowers.dat.
-// Output: Names of flowers and the words sun or shade.
+import java.io.*; 
 
-import java.io.*;  // Import class for file input.
+public class Flowers {
+    public static void main(String args[]) throws Exception {
+        String flowerName;
+		String growthCondition;;
 
-public class Flowers
-{
-	public static void main(String args[]) throws Exception
-	{
-		// Declare variables here
-		
-		// Open input file.
-		
-		// Create BufferedReader object.
-		
-	
-		// Write while loop that reads records from file.
-		
-                        // Print flower name and the words sun or shade.
-			
+        FileReader fr = new FileReader("flowers.dat");
+        BufferedReader br = new BufferedReader(fr);
 
-		br.close(); 	
-		System.exit(0);
-	} // End of main() method.
+        while((flowerName = br.readLine()) != null)
+		{
+			    growthCondition = br.readLine(); 
 
-} // End of Flowers class. 
-
+            System.out.println(flowerName + " grow best with " + growthCondition);
+        }
+        br.close(); 
+        System.exit(0);
+    }
+}
